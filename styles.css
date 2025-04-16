@@ -70,3 +70,7 @@ ul {
 ul li {
     text-align: left;
 }
+
+li {
+    margin-bottom: 2em;
+}
