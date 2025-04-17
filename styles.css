@@ -26,7 +26,7 @@ left: 10px;
 button {
     font-size: 1rem;
     position: absolute;
-    padding: 1em;
+    padding: .5em 1em;
     top: 10px;
     left: 10px;
     background-color: white;
@@ -86,3 +86,23 @@ h1 a:visited {
   color: inherit;           
   text-decoration: none;    
 }
+
+#logo{
+    max-width: 100%;
+    height: auto;
+    width: 8em;
+  }
+
+  footer {
+    background-color: #333;
+
+  }
+
+  /* Reposition on smaller screens */
+@media (max-width: 600px) {
+    button {
+      position: static; /* Removes absolute positioning */
+      margin-top: 1rem;
+      border-radius: 0%;
+      width: 100%;
+    }
