@@ -1,3 +1,4 @@
+/* ===== Global Styles ===== */
 body {
     font-family: Georgia, serif;
     margin: 0;
@@ -5,11 +6,17 @@ body {
     background-color: pink;
     text-align: center;
 }
+
+/* ===== Header ===== */
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     background-color: #333;
     color: white;
     padding: 10px;
-    text-align: center;
+
 }
 
 h1 {
@@ -17,17 +24,25 @@ h1 {
     margin: 0;
 }
 
-nav {
-display: none;
-top: 10px;
-left: 10px;
+/* Prevent link in h1 from changing color or style */
+h1 a:link,
+h1 a:visited {
+    color: inherit;
+    text-decoration: none;
 }
 
+/* ===== Navigation (hidden by default) ===== */
+nav {
+    display: none;
+    top: 10px;
+    left: 10px;
+}
+
+/* ===== Button Styling ===== */
 button {
     font-size: 1rem;
     position: absolute;
     padding: .5em 1em;
-    top: 10px;
     left: 10px;
     background-color: white;
     color: black;
@@ -35,16 +50,24 @@ button {
     border-radius: 25%;
     min-width: 44px;
     min-height: 44px;
-    
 }
 
+/* ===== Logo ===== */
+#logo {
+    max-width: 100%;
+    height: auto;
+    width: 8em;
+}
+
+/* ===== Font Class ===== */
 .playwrite-mx-guides-regular {
     font-family: "Playwrite MX Guides", cursive;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  .recipe-card {
+/* ===== Recipe Card ===== */
+.recipe-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -59,6 +82,7 @@ button {
     justify-content: center;
 }
 
+/* ===== List Styles ===== */
 ol {
     text-align: left;
 }
@@ -75,35 +99,24 @@ li {
     margin-bottom: 2em;
 }
 
+/* ===== Checkbox Styling ===== */
 input[type="checkbox"] { 
-  transform: scale(1.5);
-  transform-origin: center;
-  margin-right: 0.5em;
+    transform: scale(1.5);
+    transform-origin: center;
+    margin-right: 0.5em;
 }
 
-h1 a:link,
-h1 a:visited {
-  color: inherit;           
-  text-decoration: none;    
-}
-
-#logo{
-    max-width: 100%;
-    height: auto;
-    width: 8em;
-  }
-
-  footer {
+/* ===== Footer ===== */
+footer {
     background-color: #333;
+}
 
-  }
-
-  /* Reposition on smaller screens */
+/* ===== Responsive Styles ===== */
 @media (max-width: 600px) {
     button {
-      position: static; /* Removes absolute positioning */
-      margin-top: 1rem;
-      border-radius: 0%;
-      width: 100%;
-    }}
-    
+        position: static;       /* Removes absolute positioning */
+        margin-top: 1rem;
+        border-radius: 0%;
+        width: 100%;
+    }
+}
