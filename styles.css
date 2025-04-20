@@ -5,13 +5,22 @@ body {
     padding: 0;
     background-color: pink;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+body, html {
+    height: 100%;
 }
 
+/* ===== Main Styles ===== */
+main {
+    flex: 1;
+}
 /* ===== Header ===== */
 header {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
     position: relative;
     background-color: #333;
     color: white;
@@ -35,15 +44,15 @@ nav a:visited {
 
 /* ===== Navigation (hidden by default) ===== */
 nav {
-    display: none;
-    top: 10px;
+    display: none; /* Hidden by default */
+    top: 10px; /* Positioning for the menu */
     left: 10px;
     background-color: white;
     border-radius: 25%;
     color: #000;
     font-family: Georgia, serif;
-    justify-content: center;
-}
+    justify-content: center; /* Center the nav items */
+} 
 
 header nav ul {
     padding-left: 0;
@@ -72,8 +81,9 @@ button {
     position: absolute;
     left: 10px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: row; /* Align buttons in a row */
+    align-items: center; 
+    gap: .5em; /* Space between buttons */
 }
 
 /* ===== Logo ===== */
@@ -133,8 +143,8 @@ input[type="checkbox"] {
 /* ===== Footer ===== */
 footer {
     background-color: #333;
+    
 }
-
 /* ===== Responsive Styles ===== */
 @media (max-width: 600px) {
     button {
