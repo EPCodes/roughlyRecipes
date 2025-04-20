@@ -16,6 +16,15 @@ body, html {
 main {
     flex: 1;
 }
+
+main img {
+    width: 90%; /* Responsive image width */
+    height: auto;
+    aspect-ratio: 4 / 3; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+    ;
+}
 /* ===== Header ===== */
 header {
     display: flex;
