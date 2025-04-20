@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roughly Recipes</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <h1 class="playwrite-mx-guides-regular"><a href="index.html">Roughly Recipes</a></h1>
+        <button onclick="toggleMenu()">Menu</button>
+        <nav id="nav-menu">
+            <ul>
+              <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+      <div id="recipeContainer">
+      <h2 id="recipe-title"></h1>
+      <p class="description" id="recipe-description"></p>
+    
+      <p>Ingredients</p>
+      <ul id="ingredients-list"></ul>
+    
+      <p>Instructions</p>
+      <ol id="instructions-list"></ol>
+      </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
