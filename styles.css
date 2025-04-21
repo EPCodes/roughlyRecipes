@@ -18,7 +18,7 @@ main {
 }
 
 main img {
-    width: 90%; /* Responsive image width */
+    width: 75%; /* Responsive image width */
     height: auto;
     aspect-ratio: 4 / 3; /* Maintain aspect ratio */
     object-fit: cover;
@@ -118,13 +118,19 @@ button {
     padding: 20px;
     width: 80%;
     max-width: 600px;
+    text-decoration: none;
 }
 
 .recipe-grid {
     display: flex;
     justify-content: center;
 }
-
+/* Prevent visited recipe card links from changing color */
+.recipe-grid a:link,
+.recipe-grid a:visited {
+    color: inherit; /* Keep the color the same as the default text color */
+    text-decoration: none; /* Ensure no underline or other styles are applied */
+}
 /* ===== List Styles ===== */
 ol {
     text-align: left;
