@@ -14,7 +14,7 @@ body, html {
 
 /* ===== Main Styles ===== */
 main {
-    flex: 1;
+    flex: 1; 
 }
 
 main img {
@@ -131,6 +131,11 @@ button {
     color: inherit; /* Keep the color the same as the default text color */
     text-decoration: none; /* Ensure no underline or other styles are applied */
 }
+
+#categories-grid {
+    flex-wrap: wrap; /* Allow wrapping of categories */
+}
+
 /* ===== List Styles ===== */
 ol {
     text-align: left;
