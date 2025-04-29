@@ -132,10 +132,13 @@ button {
     text-decoration: none; /* Ensure no underline or other styles are applied */
 }
 
-#categories-grid {
+#categories-grid, .recipes-grid {
     flex-wrap: wrap; /* Allow wrapping of categories */
 }
 
+#categories-grid img, .recipes-grid img {
+    width: 50%;
+}
 /* ===== List Styles ===== */
 ol {
     text-align: left;
