@@ -20,8 +20,8 @@ main {
 main img {
     width: 75%; /* Responsive image width */
     height: auto;
-    aspect-ratio: 4 / 3; /* Maintain aspect ratio */
-    object-fit: cover;
+    aspect-ratio: 4 / 3; 
+    object-fit: cover; 
     border-radius: 10px;
 }
 
@@ -42,7 +42,7 @@ h1 {
     margin: 0;
 }
 
-/* Prevent link in h1 from changing color or style */
+
 h1 a:link,
 h1 a:visited,
 nav a:link,
@@ -59,8 +59,7 @@ nav {
     background-color: #f7f7f2;
     border-radius: 25%;
     color: #000;
-    font-family: Georgia, serif;
-    justify-content: center; /* Center the nav items */
+    justify-content: center; 
 } 
 
 header nav ul {
